@@ -1,0 +1,24 @@
+{% extends "includes/base.html" %}
+{% block title %}Portail d'achat réseaux{% endblock %}
+{% block description %}void{% endblock %}
+
+
+{% block body %}
+<div class="connect">
+    <div class="card">
+        <img src="img/trevor.png" alt="" class="profil">
+        <form action="/choice.html">
+            <input type="text" placeholder="Saisissez votre adresse mail Geolid">
+            <input type="text" placeholder="Saisissez votre mot de passe">
+            <input type="submit" value="Connexion">
+        </form>
+        <div class="passforget">
+            <a href="#">Mot de passe oublié ?</a>
+        </div>
+    </div>
+    <div class="back">
+        <a href="#">Accéder à l'ERP</a>
+    </div>
+</div>
+
+{% endblock %}
