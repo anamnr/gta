@@ -1,0 +1,29 @@
+{
+  "name": "gta",
+  "version": "1.0.0",
+  "description": "sandbox",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mickael Bruyere",
+  "license": "ISC",
+  "dependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikuaeru/gta.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mikuaeru/gta/issues"
+  },
+  "homepage": "https://github.com/Mikuaeru/gta#readme"
+}
