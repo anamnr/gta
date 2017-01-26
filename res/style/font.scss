@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+$font: 'Roboto', sans-serif;
+$fontsize-normal: 1em;
+$fontsize-title: 1.5em;
+$fontsize-mini: 0.875em;
+
+h1, h2, h3, h4, p, li, a{font-family: $font}
+
+h1{
+  font-size: $fontsize-title;
+}
 
 a{
-  font-family: 'Noto Sans', sans-serif;
+  font-family: $font;
   color: $color-bleu;
   font-weight: 700;
   text-decoration: none;
@@ -9,3 +22,12 @@ a{
 a:hover{
   color: darken($color-bleu, 20%);
 }
+
+//icons
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-blue { color:$color-bleu; }
+.material-icons.md-text { color:$color-text; }

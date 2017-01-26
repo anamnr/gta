@@ -1,0 +1,27 @@
+header.fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  @include flexbox;
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  background-color: $color-white;
+}
+
+.identity{
+  @include flexbox;
+  @include align-self(flex-end);
+  @include align-items(center);
+  @include justify-content(center);
+  padding-top: 8px;
+  p{
+    font-size: $fontsize-normal;
+    color: $color-text;
+    margin-right: 20px;
+    font-weight: 700;
+  }
+  img{
+    width:32px;
+    margin-right: 20px;
+  }
+}

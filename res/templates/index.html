@@ -1,16 +1,20 @@
 {% extends "includes/base.html" %}
-{% block title %}Portail d'achat réseaux{% endblock %}
+{% block title %}Geolid | GTA{% endblock %}
 {% block description %}void{% endblock %}
 
 
 {% block body %}
 <div class="connect">
+    <div class="title">
+        <img src="img/logo-geolid-white.png" alt="">
+        <h1>Générateur de Textes Assistés</h1>
+    </div>
     <div class="card">
         <img src="img/trevor.png" alt="" class="profil">
-        <form action="/choice.html">
-            <input type="text" placeholder="Saisissez votre adresse mail Geolid">
-            <input type="text" placeholder="Saisissez votre mot de passe">
-            <input type="submit" value="Connexion">
+        <form action="choice.html">
+            <input type="email" required placeholder="Saisissez votre adresse mail Geolid">
+            <input type="password" required placeholder="Saisissez votre mot de passe">
+            <input type="submit" value="Connexion" class="btn blue">
         </form>
         <div class="passforget">
             <a href="#">Mot de passe oublié ?</a>

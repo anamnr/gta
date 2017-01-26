@@ -1,0 +1,46 @@
+.drop {
+  position: relative;
+  ul {
+    position: absolute;
+    right: 1em;
+    top: 3em;
+    padding: 0;
+    transition: all 0.3s ease;
+    transform: scale(0);
+    transform-origin: 100% 0;
+    background-color: $color-white;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+    transition-delay: .2s;
+    li {
+      display: block;
+      width: 100%;
+      @include flexbox;
+      @include flex-direction(row);
+      @include align-items(center);
+      &:hover {
+        background: lighten(#9e9e9e, 30%);
+        border-radius: 3px;
+        a, i{
+          color: $color-bleu;
+        }
+      }
+      i{
+        padding:1em 0 1em 1em;
+      }
+      a {
+        padding: 1em;
+        display: inline-block;
+        white-space: pre;
+        box-sizing: border-box;
+        color: $color-text;
+      }
+    }
+  }
+  &:hover {
+    ul {
+      transform: scale(1);
+
+    }
+  }
+}

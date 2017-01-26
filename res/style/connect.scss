@@ -20,6 +20,16 @@ body {
   @include flex-direction(column);
 }
 
+.connect .title {
+  @include flexbox;
+  @include flex-direction(column);
+  @include align-items(center);
+  h1{
+    color: $color-white;
+    margin-bottom: 55px;
+  }
+}
+
 .connect .profil{
   border-radius: 50%;
   margin-bottom: 30px;
@@ -32,38 +42,73 @@ body {
   margin-bottom: 30px;
   min-width: 400px;
 
-  [type="text"]{
+  [type="password"], [type="email"]{
     border: solid 1px $color-divider;
     padding:10px;
     min-width: 400px;
     margin-bottom: 20px;
   }
 
+  input{
+    &:valid{
+      border: 1px solid $color-bleu;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+
   [type="submit"]{
     padding:10px;
     width: 100%;
-    border-radius: 3px;
-    background-color: $color-bleu;
-    color: $color-white;
-    font-weight: 700;
-    border: none;
+    cursor: pointer;
   }
 }
 
 .connect .passforget{
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(flex-end);
+  @include flex-direction(column);
+  min-width: 420px;
   a{
-    font-size: .9em;
+    font-size: $fontsize-mini;
+    @include align-self(flex-end);
   }
 }
 
 .connect .back{
   margin-top: 30px;
   a{
-    font-size: .8em;
+    font-size: $fontsize-mini;
     color: $color-white;
     font-weight: 400;
   }
   &:hover{
     text-decoration: underline;
+  }
+}
+
+.connect header.fixed{
+  background-color: transparent;
+}
+
+.connect .identity{
+  p{
+    color: $color-white;
+  }
+}
+
+.connect .brand,
+.connect .nav,
+.connect .search{visibility: hidden!important;}
+
+.connect .inverse{
+  position: absolute;
+  top:0;
+  left:0;
+  img{
+    margin:16px 20px;
+    height:32px;
   }
 }

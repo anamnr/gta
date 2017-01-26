@@ -1,5 +1,13 @@
 @import "color";
 @import "flex";
 @import "card";
-@import "connect";
 @import "font";
+@import "btn";
+@import "header";
+@import "drop";
+// Bootstrap
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/dropdowns";
+// Pages
+@import "connect";

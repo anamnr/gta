@@ -1,0 +1,17 @@
+.btn{
+  border-radius: 3px;
+  font-weight: 700;
+  border: none;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  &:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  &.blue {
+    background-color: $color-bleu;
+    color: $color-white;
+    &:hover{
+      background-color: darken($color-bleu, 1%);
+    }
+  }
+}
+

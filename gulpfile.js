@@ -7,6 +7,20 @@ var nunjucks = require('gulp-nunjucks');
 gulp.task('script', function () {
     return gulp
         .src([
+            "node_modules/jquery/dist/jquery.js",
+            "node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js",
+            "node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js",
+            "res/script/**/*.js"
+        ])
+        .pipe(uglify())
+        .pipe(concat("script.js"))
+        .pipe(gulp.dest('web/'))
+        ;
+});
+
+gulp.task('script', function () {
+    return gulp
+        .src([
             "node_modules/jquery/dist/jquery.slim.min.js",
             "res/script/**/*.js"
         ])
@@ -27,7 +41,11 @@ gulp.task('template', [], function () {
 gulp.task('style', function () {
     return gulp
         .src('res/style/style.scss')
-        .pipe(sass())
+        .pipe(sass({
+            "includePaths" : [
+                "node_modules/bootstrap-sass/assets/stylesheets",
+            ]
+        }))
         .pipe(gulp.dest('web/'))
         ;
 });
