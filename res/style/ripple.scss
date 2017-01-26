@@ -1,0 +1,13 @@
+.material-ripple{
+  .materialink-light{
+    background-color: $color-textlight;
+  }
+
+  .materialink-dark{
+    background-color: $color-text;
+  }
+}
+
+.material-ripple > span {
+  position: relative;
+}
