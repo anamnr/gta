@@ -6,11 +6,23 @@
   &:hover{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   }
+  &.normal{
+    padding:10px;
+    font-weight: 400;
+  }
   &.blue {
     background-color: $color-bleu;
     color: $color-white;
     &:hover{
       background-color: darken($color-bleu, 1%);
+    }
+  }
+  &.grey {
+    background-color: $color-white;
+    color: $color-text;
+    border: 1px solid $color-divider;
+    &:hover{
+      background-color: darken($color-white, 1%);
     }
   }
 }

@@ -12,28 +12,34 @@
     border-radius: 3px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
     transition-delay: .2s;
+    width:350px;
     li {
       display: block;
       width: 100%;
       @include flexbox;
       @include flex-direction(row);
-      @include align-items(center);
-      &:hover {
-        background: lighten(#9e9e9e, 30%);
+      &.profil{
         border-radius: 3px;
-        a, i{
-          color: $color-bleu;
+        @include align-items(space-between);
+        img{
+          width:80px;
+          height: 80px;
+          margin:10px;
+        }
+        .info{
+          margin:10px;
+          @include flexbox;
+          @include flex-direction(column);
+          .name{}
         }
       }
-      i{
-        padding:1em 0 1em 1em;
-      }
-      a {
-        padding: 1em;
-        display: inline-block;
-        white-space: pre;
-        box-sizing: border-box;
-        color: $color-text;
+      &.disconnect {
+        border-radius: 3px;
+        background-color: $color-background;
+        @include justify-content(flex-end);
+        button{
+          margin:7px 10px;
+        }
       }
     }
   }
