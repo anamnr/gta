@@ -9,11 +9,16 @@ header.fixed{
 }
 
 .identity{
-  @include flexbox;
-  @include align-self(flex-end);
-  @include align-items(center);
-  @include justify-content(center);
-  padding-top: 8px;
+  .hello{
+    @include flexbox;
+    @include align-self(flex-end);
+    @include align-items(center);
+    @include justify-content(center);
+    padding-top: 8px;
+    &:hover{
+      cursor: default;
+    }
+  }
   p{
     font-size: $fontsize-normal;
     color: $color-text;

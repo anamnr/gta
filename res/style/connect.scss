@@ -112,3 +112,41 @@ body {
     height:32px;
   }
 }
+
+.connect .cards.flex{
+  @include flexbox;
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  .card{
+    @include flexbox;
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    padding:0;
+    max-width: 450px;
+    max-height:120px;
+    margin: 1em;
+    .percent20{
+      width:20%;
+      text-align: center;
+      i{
+        background-color: $color-background;
+        color: $text-color;
+        font-size: 2em;
+        padding:40px;
+        border-radius: 3px 0px 0px 3px;
+      }
+    }
+    .percent80{
+      width:80%;
+      text-align: center;
+      p{
+        color: $text-color;
+      }
+    }
+    &:hover{
+      i, p{
+        color: $color-bleu!important;
+      }
+    }
+  }
+}

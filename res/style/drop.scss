@@ -20,6 +20,8 @@
       @include flex-direction(row);
       &.profil{
         border-radius: 3px;
+        margin:0;
+        padding: 10px 0;
         @include align-items(space-between);
         img{
           width:80px;
@@ -30,7 +32,17 @@
           margin:10px;
           @include flexbox;
           @include flex-direction(column);
-          .name{}
+          .name{
+            color: $color-text;
+            font-size: $fontsize-normal;
+            margin:0 0 5px 0;
+          }
+          .erp{
+            font-size: .8em;
+            color: $color-textlight;
+            font-weight: 400;
+            margin:0 0 10px 0;
+          }
         }
       }
       &.disconnect {
@@ -38,7 +50,7 @@
         background-color: $color-background;
         @include justify-content(flex-end);
         button{
-          margin:7px 10px;
+          margin:7px 15px;
         }
       }
     }
