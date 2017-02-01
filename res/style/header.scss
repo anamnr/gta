@@ -7,14 +7,50 @@ header.fixed{
   @include justify-content(space-between);
   background-color: $color-white;
 }
+.brand, .hello{
+  width: 300px;
+}
+
+.nav{
+  ul{
+    @include flexbox;
+    @include flex-direction(row);
+    margin-top: 22px;
+    margin-bottom:22px;
+    li{
+      list-style: none;
+      &.active,&:hover{
+        a{
+          color: $color-bleu;
+          border-bottom: 3px solid $color-bleu;
+        }
+      }
+      a{
+        color: $color-text;
+        text-transform: uppercase;
+        padding:15px 20px 20px 20px;
+      }
+    }
+  }
+}
+
+.search{
+  width:580px;
+  margin: 7px;
+  border-radius: 3px;
+  background-color: $color-background;
+  padding: 8px;
+}
 
 .identity{
+  float: right;
   .hello{
     @include flexbox;
-    @include align-self(flex-end);
+    @include align-self(center);
     @include align-items(center);
-    @include justify-content(center);
-    padding-top: 8px;
+    @include justify-content(flex-end);
+    padding-top: 6px;
+    padding-bottom: 6px;
     &:hover{
       cursor: default;
     }
@@ -29,4 +65,16 @@ header.fixed{
     width:32px;
     margin-right: 20px;
   }
+}
+
+.small{
+  background-color: $color-white;
+  height: 64px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.big{
+  background-color: $color-white;
+  height: 128px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }

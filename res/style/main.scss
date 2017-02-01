@@ -1,0 +1,21 @@
+.body{
+  background-color: $color-background;
+  .content{
+    &.marginsmall{
+      padding-top: 64px;
+      min-height:calc(100vh - 64px);
+    }
+    &.marginbig{
+      padding-top: 128px;
+      min-height:calc(100vh - 128px);
+    }
+  }
+}
+
+.container{
+  @include flexbox;
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  width:1200px;
+  margin: 0 auto;
+}
