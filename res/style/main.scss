@@ -12,10 +12,75 @@
   }
 }
 
-.container{
+header .container{
   @include flexbox;
   @include flex-direction(row);
   @include justify-content(space-between);
   width:1200px;
-  margin: 0 auto;
+  margin: 0px auto;
+}
+
+.content .container{
+  &.noflex{
+    display: block;
+  }
+  @include flexbox;
+  @include flex-direction(column);
+  width:1200px;
+  margin: 0px auto;
+  margin-top: 40px;
+  .title-card h2{
+    color: $color-textlight;
+    text-transform: uppercase;
+    font-size: $fontsize-normal;
+  }
+  .card{
+    padding:0px;
+    .project{
+      padding: 20px;
+      @include flexbox;
+      @include flex-direction(row);
+      @include align-items(center);
+      position: relative;
+      border-bottom: 1px solid $color-dividerlight;
+      &:hover a.action{
+        visibility: visible;
+        transition: all 0.3s ease;
+      }
+      a.action{
+        position: absolute;
+        right:0;
+        color: $color-text;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        &.a1{
+          right: 90px;
+        }
+        &.a2{
+          right: 55px;
+        }
+        &.a3{
+          right: 20px;
+        }
+      }
+      .name{
+        font-weight: 700;
+        margin-right: 20px;
+      }
+      &.encours .etat{
+        color: $color-warning;
+      }
+      &.valide .etat{
+        color: $color-good;
+      }
+      .etat{
+        position: absolute;
+        right:150px;
+        bottom: 22px;
+      }
+      &:last-child{
+        border: none;
+      }
+    }
+  }
 }
