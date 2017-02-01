@@ -8,20 +8,6 @@ gulp.task('script', function () {
     return gulp
         .src([
             "node_modules/jquery/dist/jquery.js",
-            "node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js",
-            "node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js",
-            "res/script/**/*.js"
-        ])
-        .pipe(uglify())
-        .pipe(concat("script.js"))
-        .pipe(gulp.dest('web/'))
-        ;
-});
-
-gulp.task('script', function () {
-    return gulp
-        .src([
-            "node_modules/jquery/dist/jquery.slim.min.js",
             "res/script/**/*.js"
         ])
         .pipe(uglify())

@@ -45,14 +45,13 @@ header .container{
       border-bottom: 1px solid $color-dividerlight;
       &:hover a.action{
         visibility: visible;
-        transition: all 0.3s ease;
+        transition: all 3s ease;
       }
       a.action{
         position: absolute;
         right:0;
         color: $color-text;
         visibility: hidden;
-        transition: all 0.3s ease;
         &.a1{
           right: 90px;
         }
