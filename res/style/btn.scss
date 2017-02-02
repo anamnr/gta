@@ -50,19 +50,10 @@
   opacity: 0.6;
   transform: translate3d(-50%,-50%,0);
   &.bleu {
-    background-color: #ffffff;
+    background-color: $color-bleu;
   }
-
-  &.b2 {
-    background-color: #2B2745;
-  }
-
-  &.b3 {
-    background-color: #2E4518;
-  }
-
-  &.b4 {
-    background-color: #2980b9;
+  &.card {
+    background-color: $color-text;
   }
 }
 

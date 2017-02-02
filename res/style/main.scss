@@ -1,6 +1,7 @@
 .body{
   background-color: $color-background;
   .content{
+    padding-bottom: 40px;
     &.marginsmall{
       padding-top: 64px;
       min-height:calc(100vh - 64px);
@@ -37,45 +38,67 @@ header .container{
   .card{
     padding:0px;
     .project{
-      padding: 20px;
       @include flexbox;
       @include flex-direction(row);
       @include align-items(center);
+      @include justify-content(space-between);
       position: relative;
       border-bottom: 1px solid $color-dividerlight;
+      .encours, .valide{
+        @include flexbox;
+        @include flex-direction(row);
+        @include align-items(center);
+        @include justify-content(space-between);
+
+        padding: 10px 20px;
+        width:85%;
+        color: inherit;
+        font-weight: 400;
+        .left{
+          @include flexbox;
+          @include flex-direction(row);
+          @include align-self(flex-start);
+        }
+        .right{
+          @include flexbox;
+          @include flex-direction(row);
+          @include align-self(flex-end);
+        }
+      }
+      .buttons{
+        padding-right:20px;
+        a.action{
+          margin-left: 10px;
+          color: $color-text;
+          visibility: hidden;
+          &.a1{
+            right: 90px;
+          }
+          &.a2{
+            right: 55px;
+          }
+          &.a3{
+            right: 20px;
+          }
+        }
+      }
       &:hover a.action{
         visibility: visible;
         transition: all 3s ease;
-      }
-      a.action{
-        position: absolute;
-        right:0;
-        color: $color-text;
-        visibility: hidden;
-        &.a1{
-          right: 90px;
-        }
-        &.a2{
-          right: 55px;
-        }
-        &.a3{
-          right: 20px;
-        }
       }
       .name{
         font-weight: 700;
         margin-right: 20px;
       }
-      &.encours .etat{
+      .encours .etat{
         color: $color-warning;
       }
-      &.valide .etat{
+      .valide .etat{
         color: $color-good;
       }
       .etat{
-        position: absolute;
         right:150px;
-        bottom: 22px;
+        bottom: 10px;
       }
       &:last-child{
         border: none;
