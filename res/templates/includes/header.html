@@ -1,18 +1,18 @@
 {% block header %}
-<header class="fixed {{sectionHeader.height}}">
+<header class="fixed {{sectionHeader.size}}">
     <div class="brand">
         <img src="img/logo-geolid.png" alt="">
     </div>
     <div class="container">
         <nav class="nav">
             <ul>
-                <li class="{{sectionHeader.navCreate}}">
+                <li class=" {{sectionHeader.navCreate}} ">
                     <a href="create.html">Création</a>
                 </li>
-                <li class="{{sectionHeader.navContribuate}}">
+                <li class=" {{sectionHeader.navContribuate}} ">
                     <a href="contribuate.html">Contribution</a>
                 </li>
-                <li class="{{sectionHeader.navAnalyse}}">
+                <li class=" {{sectionHeader.navAnalyse}} ">
                     <a href="analyse">Analyses</a>
                 </li>
             </ul>
@@ -48,6 +48,19 @@
         </ul>
     </div>
 </header>
+<div class="ariane">
+    <div class="container">
+        <a href="create-brief.html" class="{{sectionHeader.Ariane1}}">Brief et variables</a>
+        <i class="material-icons {{sectionHeader.Chevron1}}">chevron_right</i>
+        <a href="" class="{{sectionHeader.Ariane2}}">Sélection des structures</a>
+        <i class="material-icons {{sectionHeader.Chevron2}}">chevron_right</i>
+        <a href="" class="{{sectionHeader.Ariane3}}">Personnalisation des textes</a>
+        <i class="material-icons {{sectionHeader.Chevron3}}">chevron_right</i>
+        <a href="" class="{{sectionHeader.Ariane4}}">Vérification du Duplicate</a>
+        <i class="material-icons {{sectionHeader.Chevron4}}">chevron_right</i>
+        <a href="" class="{{sectionHeader.Ariane5}}">Validation et exportation</a>
+    </div>
+</div>
 
 
 {% endblock %}

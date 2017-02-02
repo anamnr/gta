@@ -1,0 +1,42 @@
+{% extends "includes/base.html" %}
+{% block title %}Geolid | GTA - Creation{% endblock %}
+{% block description %}void{% endblock %}
+{% set sectionHeader = {navCreate:'active', size:'big', Ariane1:'active', Chevron1:'disable', Ariane2:'disable', Chevron2:'disable', Ariane3:'disable', Chevron3:'disable', Ariane4:'disable', Chevron4:'disable', Ariane5:'disable'} %}
+
+
+{% block body %}
+<div class="body nosearch">
+    {% include "includes/header.html" %}
+    <div class="content marginbig">
+        <form action="">
+            <div class="container noflex">
+                <div class="title-card">
+                    <h2>Informations du client</h2>
+                </div>
+                <div class="card">1</div>
+            </div>
+            <div class="container noflex">
+                <div class="title-card">
+                    <h2>Personnalisation des variables</h2>
+                </div>
+                <div class="card">2</div>
+            </div>
+            <div class="container noflex">
+                    <div class="title-card">
+                        <h2>Navigation et modèle de page</h2>
+                    </div>
+            <div class="card">3</div>
+            </div>
+            <div class="container noflex">
+                <div class="title-card">
+                    <h2>Navigation et modèle de page</h2>
+                </div>
+                <div class="card">3</div>
+            </div>
+            <div class="container noflex">
+                <input type="submit" value="Confirmer le brief et les variables" class="btn blue validate ripple">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

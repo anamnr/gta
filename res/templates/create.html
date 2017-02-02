@@ -1,15 +1,14 @@
 {% extends "includes/base.html" %}
 {% block title %}Geolid | GTA - Creation{% endblock %}
 {% block description %}void{% endblock %}
-{% set sectionHeader = {height:'small'} %}
-{% set sectionHeader = {navCreate:'active'} %}
+{% set sectionHeader = {navCreate:'active', size:'small'} %}
 
 {% block body %}
 <div class="body">
     {% include "includes/header.html" %}
     <div class="content marginsmall">
         <div class="container noflex">
-            <button class="btn blue create ripple">Créer un nouveau projet</button>
+            <button onclick="window.location.href='create-brief.html'" class="btn blue create ripple">Créer un nouveau projet</button>
         </div>
         <div class="container">
             <div class="title-card">

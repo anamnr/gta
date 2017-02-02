@@ -21,7 +21,7 @@ header.fixed{
   ul{
     @include flexbox;
     @include flex-direction(row);
-    margin-top: 26px;
+    margin-top: 24px;
     margin-bottom:24px;
     padding: 0;
     li{
@@ -35,7 +35,7 @@ header.fixed{
       a{
         color: $color-text;
         text-transform: uppercase;
-        padding:15px 20px 21px 20px;
+        padding:16px 20px 18px 20px;
       }
     }
   }
@@ -65,11 +65,18 @@ header.fixed{
   &:focus{
     outline: none;
     background-color: $color-white;
+    padding: 9px;
+    padding-left: 60px;
+    font-size: $fontsize-title;
     -webkit-transition: all .2s ease-in;
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
   }
+}
+
+.nosearch header .search {
+  display: none;
 }
 
 .identity{
@@ -100,9 +107,56 @@ header.fixed{
 .small{
   background-color: $color-white;
   height: 64px;
+  .ariane{
+    display: none;
+  }
 }
 
 .big{
-  background-color: $color-white;
   height: 128px;
+  .brand, .container, .identity{
+    height: 64px;
+  }
+}
+
+.ariane{
+  margin:0 auto;
+  z-index: 10000;
+  position: fixed;
+  margin-top: 64px;
+  width: 100%;
+  border-top: 1px solid $color-dividerlight;
+  .container{
+    margin:0 auto;
+    width:1200px;
+    padding: 18px 0;
+    @include flexbox;
+    @include flex-direction(row);
+    @include align-items(center);
+    a{
+      &.disable{
+        color: $color-textlight;
+        cursor: default;
+      }
+      &.active{
+        color: $color-bleu;
+      }
+      &.enable{
+        color: $color-text;
+        &:hover{
+          color: $color-bleu;
+        }
+      }
+    }
+    i{
+      cursor: default;
+      margin:0 10px;
+      &.disable{
+        color: $color-textlight;
+      }
+      &.enable{
+        color: $color-text;
+      }
+    }
+  }
 }
