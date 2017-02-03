@@ -24,6 +24,17 @@ header .container{
 .content .container{
   &.noflex{
     display: block;
+    &.submit{
+      text-align: right;
+      position: relative;
+      i{
+        position: absolute;
+        right: 0;
+        padding-right: 30px;
+        padding-top: 20px;
+        color: $color-white;
+      }
+    }
   }
   @include flexbox;
   @include flex-direction(column);

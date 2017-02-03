@@ -7,7 +7,6 @@ header.fixed{
   @include justify-content(space-between);
   background-color: $color-white;
   z-index: 9999;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
 }
 .brand, .hello{
   width: 300px;
@@ -107,6 +106,7 @@ header.fixed{
 .small{
   background-color: $color-white;
   height: 64px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
   .ariane{
     display: none;
   }
@@ -114,6 +114,7 @@ header.fixed{
 
 .big{
   height: 128px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
   .brand, .container, .identity{
     height: 64px;
   }
@@ -126,6 +127,9 @@ header.fixed{
   margin-top: 64px;
   width: 100%;
   border-top: 1px solid $color-dividerlight;
+  &.none{
+    display: none;
+  }
   .container{
     margin:0 auto;
     width:1200px;
@@ -157,6 +161,22 @@ header.fixed{
       &.enable{
         color: $color-text;
       }
+    }
+  }
+  .save{
+    position: absolute;
+    right: 0;
+    top:0;
+    padding:5px 20px;
+    @include flexbox;
+    @include flex-direction(row);
+    @include align-items(center);
+    p{
+      margin-right: 20px;
+      color: $color-textlight;
+    }
+    button{
+      padding: 14px 25px;
     }
   }
 }
