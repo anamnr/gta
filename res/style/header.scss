@@ -2,11 +2,15 @@ header.fixed{
   position: fixed;
   top: 0;
   width: 100%;
-  @include flexbox;
-  @include flex-direction(row);
-  @include justify-content(space-between);
   background-color: $color-white;
   z-index: 100;
+  @include flexbox;
+  @include flex-direction(column);
+  .first-row{
+    @include flexbox;
+    @include flex-direction(row);
+    @include justify-content(space-between);
+  }
 }
 .brand, .hello{
   width: 300px;
@@ -130,7 +134,7 @@ header.fixed{
   &.none{
     display: none;
   }
-  .container{
+  .inner{
     margin:0 auto;
     width:1200px;
     padding: 18px 0;

@@ -1,70 +1,72 @@
 {% block header %}
 <header class="fixed {{sectionHeader.size}}">
-    <div class="brand">
-        <img src="img/logo-geolid.png" alt="">
-    </div>
-    <div class="container">
-        <nav class="nav">
+    <div class="first-row">
+        <div class="brand">
+            <img src="img/logo-geolid.png" alt="">
+        </div>
+        <div class="container">
+            <nav class="nav">
+                <ul>
+                    <li class=" {{sectionHeader.navCreate}} ">
+                        <a href="create.html">Création</a>
+                    </li>
+                    <li class=" {{sectionHeader.navContribuate}} ">
+                        <a href="contribuate.html">Contribution</a>
+                    </li>
+                    <li class=" {{sectionHeader.navAnalyse}} ">
+                        <a href="analyse">Analyses</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search">
+                <i class="material-icons">search</i>
+                <input type="search" placeholder="Rechercher un projet dans Création" name="the_search">
+            </div>
+        </div>
+        <div class="identity drop">
+            <div class="hello">
+                <p>Bonjour Trevor P.</p>
+                <img src="img/trevor.png" alt="">
+            </div>
             <ul>
-                <li class=" {{sectionHeader.navCreate}} ">
-                    <a href="create.html">Création</a>
+                <li class="profil">
+                    <img src="img/trevor.png" alt="">
+                    <div class="info">
+                        <p class="name">Trevor Phillips</p>
+                        <p class="erp">
+                            t.phillips@geolid.com - <a href="#">Accéder à l'ERP</a>
+                        </p>
+                        <button class="btn normal blue ripple">
+                            Comparer mes badges
+                        </button>
+                    </div>
                 </li>
-                <li class=" {{sectionHeader.navContribuate}} ">
-                    <a href="contribuate.html">Contribution</a>
-                </li>
-                <li class=" {{sectionHeader.navAnalyse}} ">
-                    <a href="analyse">Analyses</a>
+                <li class="disconnect">
+                    <button onclick="window.location.href='index.html'" class="btn normal grey">
+                        Déconnexion
+                    </button>
                 </li>
             </ul>
-        </nav>
-        <div class="search">
-            <i class="material-icons">search</i>
-            <input type="search" placeholder="Rechercher un projet dans Création" name="the_search">
         </div>
     </div>
-    <div class="identity drop">
-        <div class="hello">
-            <p>Bonjour Trevor P.</p>
-            <img src="img/trevor.png" alt="">
+    <div class="ariane {{sectionHeader.Ariane}}">
+        <div class="inner">
+            <a href="create-brief.html" class="{{sectionHeader.Ariane1}}">Brief et variables</a>
+            <i class="material-icons {{sectionHeader.Chevron1}}">chevron_right</i>
+            <a href="" class="{{sectionHeader.Ariane2}}">Sélection des structures</a>
+            <i class="material-icons {{sectionHeader.Chevron2}}">chevron_right</i>
+            <a href="" class="{{sectionHeader.Ariane3}}">Personnalisation des textes</a>
+            <i class="material-icons {{sectionHeader.Chevron3}}">chevron_right</i>
+            <a href="" class="{{sectionHeader.Ariane4}}">Vérification du Duplicate</a>
+            <i class="material-icons {{sectionHeader.Chevron4}}">chevron_right</i>
+            <a href="" class="{{sectionHeader.Ariane5}}">Validation et exportation</a>
         </div>
-        <ul>
-            <li class="profil">
-                <img src="img/trevor.png" alt="">
-                <div class="info">
-                    <p class="name">Trevor Phillips</p>
-                    <p class="erp">
-                        t.phillips@geolid.com - <a href="#">Accéder à l'ERP</a>
-                    </p>
-                    <button class="btn normal blue ripple">
-                        Comparer mes badges
-                    </button>
-                </div>
-            </li>
-            <li class="disconnect">
-                <button onclick="window.location.href='index.html'" class="btn normal grey">
-                    Déconnexion
-                </button>
-            </li>
-        </ul>
+        <div class="save">
+            <p>Enregisté il y a 5 minutes</p>
+            <button class="btn blue ripple">Enregistrer</button>
+        </div>
     </div>
 </header>
-<div class="ariane {{sectionHeader.Ariane}}">
-    <div class="container">
-        <a href="create-brief.html" class="{{sectionHeader.Ariane1}}">Brief et variables</a>
-        <i class="material-icons {{sectionHeader.Chevron1}}">chevron_right</i>
-        <a href="" class="{{sectionHeader.Ariane2}}">Sélection des structures</a>
-        <i class="material-icons {{sectionHeader.Chevron2}}">chevron_right</i>
-        <a href="" class="{{sectionHeader.Ariane3}}">Personnalisation des textes</a>
-        <i class="material-icons {{sectionHeader.Chevron3}}">chevron_right</i>
-        <a href="" class="{{sectionHeader.Ariane4}}">Vérification du Duplicate</a>
-        <i class="material-icons {{sectionHeader.Chevron4}}">chevron_right</i>
-        <a href="" class="{{sectionHeader.Ariane5}}">Validation et exportation</a>
-    </div>
-    <div class="save">
-        <p>Enregisté il y a 5 minutes</p>
-        <button class="btn blue ripple">Enregistrer</button>
-    </div>
-</div>
 
 
 {% endblock %}

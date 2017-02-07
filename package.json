@@ -10,6 +10,7 @@
   "author": "Mickael Bruyere",
   "license": "ISC",
   "dependencies": {
+    "bootstrap-material-design": "^0.5.10",
     "bootstrap-sass": "^3.3.7",
     "concat": "0.0.1-security",
     "del": "^2.2.2",
