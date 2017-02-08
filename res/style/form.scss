@@ -55,6 +55,27 @@
         list-style: none;
       }
     }
+    &.radio-inline{
+      @include flexbox;
+      @include flex-direction(row);
+      @include justify-content(flex-start);
+      @include align-items(center);
+      p.field_input{
+        color: $color-textlight;
+      }
+      i{
+        left: 250px;
+      }
+      .cntr{
+        @include flexbox;
+        @include flex-direction(row);
+        @include justify-content(flex-start);
+        @include align-items(center);
+        .ig-control{
+          margin: 0 0 0 15px
+        }
+      }
+    }
   }
   .title-minisection {
     @include flexbox;
@@ -306,7 +327,7 @@
 
 .dropdown {
   position: relative;
-  z-index: 200;
+  z-index: 2;
   width:100%;
   margin:0;
 }
@@ -365,7 +386,7 @@
 }
 .dropdown dd ul {
   background-color: $color-white;
-  z-index: 200;
+  z-index: 2;
   border: 0;
   display: none;
   right: 0;
