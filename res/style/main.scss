@@ -31,8 +31,15 @@ header .container{
         position: absolute;
         right: 0;
         padding-right: 30px;
-        padding-top: 20px;
+        padding-top: 21px;
         color: $color-white;
+      }
+      input{
+        color: $color-white!important;
+        font-size: $fontsize-normal!important;
+        width:auto;
+        display: initial;
+        border: none;
       }
     }
   }

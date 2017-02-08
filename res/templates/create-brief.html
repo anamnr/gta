@@ -37,6 +37,7 @@
                                     <a href="#">
                                         <span class="hida">Sélection du métier</span>
                                         <p class="multiSel"></p>
+                                        <i class="material-icons">arrow_drop_down</i>
                                     </a>
                                 </dt>
 
@@ -73,16 +74,47 @@
                             </dl>
                         </div>
                         <div class="column">
-                            <input class="field_input show-dropdown" id="select_cible" type="button" required placeholder="Sélection de la cible clientèle">
-                            <label class="field_label" for="select_cible">Sélection de la cible clientèle</label>
-                            <i class="material-icons" class="show-dropdown">arrow_drop_down</i>
-                            <div class="dropdown-form">
-                                <ul>
-                                    <li>
-                                        lol
-                                    </li>
-                                </ul>
-                            </div>
+                            <dl class="dropdown">
+
+                                <dt>
+                                    <a href="#">
+                                        <span class="hida">Sélection de la cible clientèle</span>
+                                        <p class="multiSel"></p>
+                                        <i class="material-icons">arrow_drop_down</i>
+                                    </a>
+                                </dt>
+
+                                <dd>
+                                    <div class="mutliSelect">
+                                        <ul>
+                                            <li class="checkbox">
+                                                <p>1</p>
+                                                <input type="checkbox" value="Apple" />
+                                            </li>
+                                            <li class="checkbox">
+                                                <p>2</p>
+                                                <input type="checkbox" value="Blackberry" />
+                                            </li>
+                                            <li class="checkbox">
+                                                <p>3</p>
+                                                <input type="checkbox" value="HTC" />
+                                            </li>
+                                            <li class="checkbox">
+                                                <p>4</p>
+                                                <input type="checkbox" value="Sony Ericson" />
+                                            </li>
+                                            <li class="checkbox">
+                                                <p>5</p>
+                                                <input type="checkbox" value="Motorola" />
+                                            </li>
+                                            <li class="checkbox">
+                                                <p>6</p>
+                                                <input type="checkbox" value="Nokia" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </dd>
+                            </dl>
                         </div>
                     </div>
                     <div class="duo group">
@@ -138,10 +170,12 @@
                     <div class="full group">
                         emploi du
                     </div>
+                    <div class="title-minisection">
+                        <h4>Zone de communication <i class="material-icons">info</i></h4>
+                    </div>
                     <div class="full group">
                         <input class="field_input" id="localisation" type="text" required placeholder="Localisation *">
                         <label class="field_label" for="localisation">Localisation *</label>
-                        <i class="material-icons">info</i>
                     </div>
                     <div class="duo group">
                         <div class="column">
@@ -149,9 +183,64 @@
                             <label class="field_label" for="localisation">Localisation *</label>
                         </div>
                         <div class="column">
-                            <input class="field_input" id="nbr_salarie" type="text" required placeholder="Nombre de salariés">
-                            <label class="field_label" for="nbr_salarie">Nombre de salariés</label>
+                            <input class="field_input" id="num_cp" type="text" required placeholder="Code postal">
+                            <label class="field_label" for="num_cp">Code postal</label>
                         </div>
+                    </div>
+                    <div class="full group">
+                        <input class="field_input" id="ville_p" type="text" required placeholder="Ville principale *">
+                        <label class="field_label" for="ville_p">Ville principale *</label>
+                    </div>
+                    <div class="full group">
+                        <input class="field_input" id="ville_2" type="text" required placeholder="Ville 2 *">
+                        <label class="field_label" for="ville_2">Ville 2 *</label>
+                    </div>
+                    <div class="full group">
+                        <input class="field_input" id="ville_3" type="text" required placeholder="Ville 3 *">
+                        <label class="field_label" for="ville_3">Ville 3 *</label>
+                    </div>
+                    <div class="full group">
+                        <input class="field_input" id="ville_4" type="text" required placeholder="Ville 4 *">
+                        <label class="field_label" for="ville_4">Ville 4 *</label>
+                    </div>
+                    <div class="full group">
+                        <input class="field_input" id="ville_5" type="text" required placeholder="Ville 5 *">
+                        <label class="field_label" for="ville_5">Ville 5 *</label>
+                    </div>
+                    <div class="duo group">
+                        <div class="column">
+                            <input class="field_input" id="dpmnt" type="text" required placeholder="Département *">
+                            <label class="field_label" for="dpmnt">Département *</label>
+                        </div>
+                        <div class="column">
+                            <input class="field_input" id="dpmnt_id" type="text" required placeholder="Indicatif département">
+                            <label class="field_label" for="dpmnt_id">Indicatif département</label>
+                        </div>
+                    </div>
+                    <div class="title-minisection">
+                        <h4>Activités du client <i class="material-icons">info</i></h4>
+                    </div>
+                    <div class="duo group">
+                        <div class="column">
+                            <input class="field_input" id="metier_s" type="text" required placeholder="Métier (singulier) *">
+                            <label class="field_label" for="metier_s">Métier (singulier) *</label>
+                        </div>
+                        <div class="column">
+                            <input class="field_input" id="metier_p" type="text" required placeholder="Métier (pluriel) *">
+                            <label class="field_label" for="metier_p">Métier (pluriel) *</label>
+                        </div>
+                    </div>
+                    <div class="full group">
+                        <input class="field_input" id="activite_1" type="text" required placeholder="Activité 1">
+                        <label class="field_label" for="activite_1">Activité 1</label>
+                    </div>
+                    <div class="full group">
+                        <input class="field_input" id="activite_2" type="text" required placeholder="Activité 1">
+                        <label class="field_label" for="activite_2">Activité 1</label>
+                    </div>
+                    <div class="full group">
+                        <input class="field_input" id="activite_3" type="text" required placeholder="Activité 1">
+                        <label class="field_label" for="activite_3">Activité 1</label>
                     </div>
                 </div>
             </div>
@@ -159,7 +248,36 @@
                     <div class="title-card">
                         <h2>Navigation et modèle de page</h2>
                     </div>
-            <div class="card">3</div>
+            <div class="card">
+                <div class="brief-selectpage">
+                    <div class="title-minisection">
+                        <h4>Page 1 <i class="material-icons">info</i></h4>
+                        <div class="buttons">
+                            <a href=""><i class="material-icons">keyboard_arrow_down</i></a>
+                            <a href=""><i class="material-icons">keyboard_arrow_up</i></a>
+                            <a href=""><i class="material-icons">content_copy</i></a>
+                            <a href=""><i class="material-icons">delete</i></a>
+                        </div>
+                    </div>
+                    <div class="duo group">
+                        <div class="column">
+                            <input class="field_input" id="name_page_1" type="text" required placeholder="Nom de la page">
+                            <label class="field_label" for="name_page_1">Nom de la page</label>
+                        </div>
+                        <div class="column">
+                            <input class="field_input" id="modele_page_1" type="text" required placeholder="Sélection du modèle de page">
+                            <label class="field_label" for="modele_page_1">Sélection du modèle de page</label>
+                        </div>
+                    </div>
+                    <div class="full group">
+                        <input class="field_input" id="info_page_1" type="text" required placeholder="Détails et infos client">
+                        <label class="field_label" for="info_page_1">Détails et infos client</label>
+                    </div>
+                </div>
+                <div class="add-page">
+                    <a class="btn invert blue ripple">Ajouter une page</a>
+                </div>
+            </div>
             </div>
             <div class="container noflex submit">
                 <input type="submit" value="Confirmer le brief et les variables" class="btn blue validate ripple">

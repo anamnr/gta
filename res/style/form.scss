@@ -56,6 +56,40 @@
       }
     }
   }
+  .title-minisection {
+    @include flexbox;
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    @include align-items(center);
+    h4 {
+      @include flexbox;
+      @include flex-direction(row);
+      @include align-items(center);
+      margin: 0;
+      color: $color-text !important;
+      text-transform: uppercase !important;
+      i {
+        margin-left: 10px;
+        color: $color-textlight;
+        cursor: default;
+        transition: all .2s ease-in;
+        &:hover {
+          color: $color-text;
+        }
+      }
+    }
+    .buttons{
+      a{
+        margin-left: 10px;
+        color: $color-textlight;
+        cursor: pointer;
+        transition: all .2s ease-in;
+        &:hover{
+          color: $color-text;
+        }
+      }
+    }
+  }
   input {
     padding: 40px 25px;
     width: 100%;

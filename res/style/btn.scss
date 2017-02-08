@@ -16,7 +16,7 @@
     font-weight: 700;
   }
   &.validate{
-    padding:25px 70px 25px 35px;
+    padding:25px 70px 25px 35px!important;
     font-weight: 700;
   }
   &.blue {
@@ -24,6 +24,14 @@
     color: $color-white;
     &:hover{
       background-color: darken($color-bleu, 1%);
+    }
+    &.invert{
+      color:$color-bleu;
+      background-color: transparent;
+      text-transform: uppercase;
+      &:hover{
+        box-shadow: none!important;
+      }
     }
   }
   &.grey {
