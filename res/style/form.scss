@@ -96,7 +96,7 @@
     input:focus ~ p.info{
       opacity: 1;
     }
-    dt:hover,  ~ p.info-cible{
+    dt:hover ~ .info-cible{
       opacity: 1;
     }
   }

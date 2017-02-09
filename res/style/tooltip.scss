@@ -23,6 +23,7 @@ i[data-tooltip]::before {
   padding: 10px;
   border-radius: 5px;
   font-family: $font;
+  z-index: 20;
 
   /* we don't want the text to wrap */
   white-space: nowrap;
