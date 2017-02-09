@@ -17,73 +17,205 @@
                     <div class="full group">
                         <input class="field_input" id="nom_du_projet" type="text" required placeholder="Nom du projet *">
                         <label class="field_label" for="nom_du_projet">Nom du projet *</label>
-                        <i class="material-icons tooltip bottom" data-placement="bottom" data-tooltip="Détail du tooltip à définir.">info</i>
+                        <p class="info">Le nom qui permettra d’identifier ce projet dans la liste de tous les projets GTA. Ex : le nom de l’établissement, “Lady Fitness Nantes”)</p>
+                        <!--<i class="material-icons tooltip bottom" data-placement="bottom" data-tooltip="Le nom qui permettra d’identifier ce projet dans la liste de tous les projets GTA. Ex : le nom de l’établissement, “Lady Fitness Nantes”)">info</i>-->
                     </div>
                     <div class="duo group">
                         <div class="column">
                             <input class="field_input" id="nom_etablissement" type="text" required placeholder="Nom de l'établissement *">
                             <label class="field_label" for="nom_etablissement">Nom de l'établissement *</label>
+                            <p class="info">Le nom de l’entreprise tel qu’il apparaîtra dans les textes. Peut comporter un article ou un sigle. Ex : “Les Etablissements X”, “B.M.F.”, “L’institut Paradise”...</p>
                         </div>
                         <div class="column">
                             <input class="field_input" id="nbr_salarie" type="text" required placeholder="Nombre de salariés">
                             <label class="field_label" for="nbr_salarie">Nombre de salariés</label>
+                            <p class="info">Le nombre de salariés, ou une approximation, pour indiquer si l’entreprise est composée d’une équipe ou d’un gérant seul</p>
                         </div>
                     </div>
                     <div class="duo group">
                         <div class="column">
-                            <dl class="dropdown">
-
-                                <dt>
-                                    <a href="#">
-                                        <span class="hida">Sélection du métier</span>
-                                        <p class="multiSel"></p>
-                                        <i class="material-icons">arrow_drop_down</i>
-                                    </a>
-                                </dt>
-
-                                <dd>
-                                    <div class="mutliSelect">
-                                        <ul>
-                                            <li class="checkbox">
-                                                <p>1</p>
-                                                <input type="checkbox" value="Apple" />
-                                            </li>
-                                            <li class="checkbox">
-                                                <p>2</p>
-                                                <input type="checkbox" value="Blackberry" />
-                                            </li>
-                                            <li class="checkbox">
-                                                <p>3</p>
-                                                <input type="checkbox" value="HTC" />
-                                            </li>
-                                            <li class="checkbox">
-                                                <p>4</p>
-                                                <input type="checkbox" value="Sony Ericson" />
-                                            </li>
-                                            <li class="checkbox">
-                                                <p>5</p>
-                                                <input type="checkbox" value="Motorola" />
-                                            </li>
-                                            <li class="checkbox">
-                                                <p>6</p>
-                                                <input type="checkbox" value="Nokia" />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </dd>
-                            </dl>
+                            <input class="field_input" list="metier" type="text" id="select_metier" required placeholder="Sélection du métier">
+                            <label class="field_label" for="select_metier">Sélection du métier</label>
+                            <i class="material-icons">arrow_drop_down</i>
+                            <datalist id="metier">
+                                <option value="Achat d'or">
+                                <option value="Agence de voyage">
+                                <option value="Agence matrimoniale">
+                                <option value="Aide à la personne">
+                                <option value="Alarmes">
+                                <option value="Alimentation">
+                                <option value="Ambulances">
+                                <option value="Ameublement">
+                                <option value="Animalerie">
+                                <option value="Annonces légales">
+                                <option value="Architecte">
+                                <option value="Assainissement">
+                                <option value="Association">
+                                <option value="Audioprothésistes">
+                                <option value="Auto-ecole">
+                                <option value="Automobile autres">
+                                <option value="Avocat">
+                                <option value="Baptême de l'air">
+                                <option value="Béton ciré">
+                                <option value="Bijouterie">
+                                <option value="Carburants">
+                                <option value="Carrelage">
+                                <option value="Carrossier">
+                                <option value="Cartouches d'encre">
+                                <option value="Caviste">
+                                <option value="Cavistes">
+                                <option value="Centre de bronzage">
+                                <option value="Charpentier">
+                                <option value="Chauffage">
+                                <option value="Chirurgien esthétique">
+                                <option value="Climatisation">
+                                <option value="Clôtures">
+                                <option value="Coiffeurs">
+                                <option value="Complexe sportif">
+                                <option value="Comptabilité">
+                                <option value="Concessionnaire Auto">
+                                <option value="Concessionnaire Moto">
+                                <option value="Constructeur">
+                                <option value="Constructeurs de maisons">
+                                <option value="Contrôle technique">
+                                <option value="Courtier">
+                                <option value="Couturier">
+                                <option value="Couvreurs zingueurs">
+                                <option value="Cuisiniste">
+                                <option value="Décoration">
+                                <option value="Déménageurs">
+                                <option value="Démolition">
+                                <option value="Dentiste">
+                                <option value="Dépannage">
+                                <option value="Dépôt vente">
+                                <option value="Dératisation / désinsectisation">
+                                <option value="Deux/ quatre roues">
+                                <option value="Diététique">
+                                <option value="Discothèque">
+                                <option value="Domotique">
+                                <option value="Ecole danse">
+                                <option value="E-commerce">
+                                <option value="Electricien domotique">
+                                <option value="Electriciens">
+                                <option value="Electroménager ">
+                                <option value="Dépannage">
+                                <option value="Electroménager Vente">
+                                <option value="Epaviste">
+                                <option value="Escalier">
+                                <option value="Evénementiel">
+                                <option value="Evènementiel">
+                                <option value="Expert Comptable">
+                                <option value="Fenêtre">
+                                <option value="Ferronnerie">
+                                <option value="Fleuriste">
+                                <option value="Fleuriste / Jardinerie">
+                                <option value="Forage">
+                                <option value="Forage / géothermie">
+                                <option value="Formation">
+                                <option value="Garagiste contrôle technique">
+                                <option value="Garagistes">
+                                <option value="Garde d'animaux">
+                                <option value="Géomètre">
+                                <option value="Gestion de patrimoine">
+                                <option value="Goudronnage">
+                                <option value="Grande distribution">
+                                <option value="Habitat extérieur">
+                                <option value="Hifi / informatique">
+                                <option value="Hors catégorie">
+                                <option value="Hôtellerie">
+                                <option value="Immobilier agence">
+                                <option value="Immobilier chasseur">
+                                <option value="Immobilier diagnostic">
+                                <option value="Imprimeur">
+                                <option value="Informatique">
+                                <option value="Instituts de beauté">
+                                <option value="Isolation intérieure extérieure">
+                                <option value="Isolation toiture combles">
+                                <option value="Jouets">
+                                <option value="Laser game">
+                                <option value="Lavage auto">
+                                <option value="Livraison de pizzas">
+                                <option value="Livraison sushis">
+                                <option value="Location camion utilitaire">
+                                <option value="Location de bennes">
+                                <option value="Location de véhicules">
+                                <option value="Location divers">
+                                <option value="Location d'outils de chantier">
+                                <option value="Location engins de chantier">
+                                <option value="Maçonnerie">
+                                <option value="Magasin de téléphone">
+                                <option value="Magasin de vêtements">
+                                <option value="Magasin Mode Chaîne">
+                                <option value="Maison de retraite">
+                                <option value="Marbrerie">
+                                <option value="Massage spa hammam">
+                                <option value="Matériel agricole">
+                                <option value="Matériel médical">
+                                <option value="Médecines douces">
+                                <option value="Menuisier fenêtre">
+                                <option value="Menuisiers">
+                                <option value="Mode">
+                                <option value="Nettoyage">
+                                <option value="Nettoyage automobile">
+                                <option value="Nutritionniste">
+                                <option value="Opticien">
+                                <option value="Opticiens">
+                                <option value="Ostéopathe">
+                                <option value="Parc de loisirs">
+                                <option value="Parqueteur">
+                                <option value="Paysagistes">
+                                <option value="Peintres">
+                                <option value="Photographe">
+                                <option value="Pièces auto">
+                                <option value="Pisciniste">
+                                <option value="Piscinistes">
+                                <option value="Plombiers">
+                                <option value="Pompes funèbres">
+                                <option value="Pressing / Teinturerie">
+                                <option value="Psychologue">
+                                <option value="Ramonage">
+                                <option value="Rénovation">
+                                <option value="Réparation informatique">
+                                <option value="Reprogrammation moteur">
+                                <option value="Restauration">
+                                <option value="Revêtement de sol">
+                                <option value="Salles de sport">
+                                <option value="Sécurité">
+                                <option value="Serruriers">
+                                <option value="Services à la personne">
+                                <option value="Services aux entreprises">
+                                <option value="Signalétique">
+                                <option value="Société de gros œuvre">
+                                <option value="Soutien scolaire">
+                                <option value="SPA">
+                                <option value="Surveillance">
+                                <option value="Tatoueur">
+                                <option value="Taxi">
+                                <option value="Taxis">
+                                <option value="Thérapeutes">
+                                <option value="Toiletteur">
+                                <option value="Traitement des sols">
+                                <option value="Traiteurs">
+                                <option value="Transport">
+                                <option value="Transport de personnes (navette)">
+                                <option value="Vente à domicile">
+                                <option value="Vente de combustibles">
+                                <option value="Vente directe">
+                                <option value="Vétérinaire">
+                                <option value="Vitrerie">
+                            </datalist>
                         </div>
                         <div class="column">
                             <dl class="dropdown">
-
                                 <dt>
                                     <a href="#">
                                         <span class="hida">Sélection de la cible clientèle</span>
-                                        <p class="multiSel"></p>
+                                        <p class="multiSel" id="select_cible"></p>
+                                        <label class="field_label" for="select_cible">Sélection de la cible clientèle</label>
                                         <i class="material-icons">arrow_drop_down</i>
                                     </a>
                                 </dt>
-
+                                <p class="info-cible">Indiquer la ou les cible(s) clientèle(s) de l’entreprise, au pluriel. Ex : “particuliers et professionnels</p>
                                 <dd>
                                     <div class="mutliSelect">
                                         <ul>
@@ -105,7 +237,7 @@
                         <div class="column">
                             <div class="title">
                                 <p>Choix du type d'établissement *</p>
-                                <i class="material-icons">info</i>
+                                <i class="material-icons tooltip bottom" data-placement="bottom" data-tooltip="Sélectionner la proposition qui correspond à l’activité de l’entreprise">info</i>
                             </div>
                             <div class="cntr">
                                 <div class="ig-control">
@@ -125,7 +257,7 @@
                         <div class="column">
                             <div class="title">
                                 <p>Choix du type de prestations *</p>
-                                <i class="material-icons">info</i>
+                                <i class="material-icons tooltip bottom" data-placement="bottom" data-tooltip="Sélectionner la proposition qui correspond aux prestations que fournit l’entreprise">info</i>
                             </div>
 
                             <div class="cntr">
@@ -163,53 +295,58 @@
                                 <label class="radio_label" for="je">Je</label>
                             </div>
                         </div>
-                        <i class="material-icons">info</i>
+                        <i class="material-icons tooltip bottom" data-placement="bottom" data-tooltip="Cocher le pronom qui doit être employé dans le texte. “Je” si le client intervient seul ou “Nous” si l’entreprise est composée d’une équipe">info</i>
                     </div>
                     <div class="title-minisection">
-                        <h4>Zone de communication <i class="material-icons">info</i></h4>
-                    </div>
-                    <div class="full group">
-                        <input class="field_input" id="localisation" type="text" required placeholder="Localisation *">
-                        <label class="field_label" for="localisation">Localisation *</label>
+                        <h4>Zone de communication</h4>
                     </div>
                     <div class="duo group">
                         <div class="column">
                             <input class="field_input" id="localisation" type="text" required placeholder="Localisation *">
                             <label class="field_label" for="localisation">Localisation *</label>
+                            <p class="info">Ecrire le nom de la ville où est implantée l’entreprise du client, telle qu’elle doit apparaître dans le texte (ex : avec une majuscule, suivie de son CP, etc.)</p>
                         </div>
                         <div class="column">
                             <input class="field_input" id="num_cp" type="text" required placeholder="Code postal">
                             <label class="field_label" for="num_cp">Code postal</label>
+                            <p class="info">Entrer le code postal (CP) de la localisation de l’entreprise. Il peut apparaître dans le texte</p>
                         </div>
                     </div>
                     <div class="full group">
                         <input class="field_input" id="ville_p" type="text" required placeholder="Ville principale *">
                         <label class="field_label" for="ville_p">Ville principale *</label>
+                        <p class="info">Ecrire le nom de la ville principale de communication du client telle qu’elle doit apparaître dans le texte (ex : avec une majuscule, etc.) : la plus grande ville proche, la ville ciblée par sa campagne…</p>
                     </div>
                     <div class="full group">
                         <input class="field_input" id="ville_2" type="text" required placeholder="Ville 2 *">
                         <label class="field_label" for="ville_2">Ville 2 *</label>
+                        <p class="info">Entrer le nom d’une ville présente dans la zone de communication du client, telle qu’elle doit apparaître dans le texte (ex : avec une majuscule, des tirets…). Si la zone ne comporte pas plusieurs villes, réutiliser la ville principale dans chaque champ et reformuler les textes par la suite.</p>
                     </div>
                     <div class="full group">
                         <input class="field_input" id="ville_3" type="text" required placeholder="Ville 3 *">
                         <label class="field_label" for="ville_3">Ville 3 *</label>
+                        <p class="info">Entrer le nom d’une ville présente dans la zone de communication du client, telle qu’elle doit apparaître dans le texte (ex : avec une majuscule, des tirets…). Si la zone ne comporte pas plusieurs villes, réutiliser la ville principale dans chaque champ et reformuler les textes par la suite.</p>
                     </div>
                     <div class="full group">
                         <input class="field_input" id="ville_4" type="text" required placeholder="Ville 4 *">
                         <label class="field_label" for="ville_4">Ville 4 *</label>
+                        <p class="info">Entrer le nom d’une ville présente dans la zone de communication du client, telle qu’elle doit apparaître dans le texte (ex : avec une majuscule, des tirets…). Si la zone ne comporte pas plusieurs villes, réutiliser la ville principale dans chaque champ et reformuler les textes par la suite.</p>
                     </div>
                     <div class="full group">
                         <input class="field_input" id="ville_5" type="text" required placeholder="Ville 5 *">
                         <label class="field_label" for="ville_5">Ville 5 *</label>
+                        <p class="info">Entrer le nom d’une ville présente dans la zone de communication du client, telle qu’elle doit apparaître dans le texte (ex : avec une majuscule, des tirets…). Si la zone ne comporte pas plusieurs villes, réutiliser la ville principale dans chaque champ et reformuler les textes par la suite.</p>
                     </div>
                     <div class="duo group">
                         <div class="column">
                             <input class="field_input" id="dpmnt" type="text" required placeholder="Département *">
                             <label class="field_label" for="dpmnt">Département *</label>
+                            <p class="info">Ecrire le nom du département principal dans la zone de communication du client tel qu’il doit apparaître dans le texte (ex : avec une majuscule, etc.)</p>
                         </div>
                         <div class="column">
                             <input class="field_input" id="dpmnt_id" type="text" required placeholder="Indicatif département">
                             <label class="field_label" for="dpmnt_id">Indicatif département</label>
+                            <p class="info">Indiquer l’indicatif du département principal dans la zone de communication du client. Il peut apparaître dans le texte (ex : 69, 974…)</p>
                         </div>
                     </div>
                     <div class="title-minisection">
@@ -219,23 +356,28 @@
                         <div class="column">
                             <input class="field_input" id="metier_s" type="text" required placeholder="Métier (singulier) *">
                             <label class="field_label" for="metier_s">Métier (singulier) *</label>
+                            <p class="info">Ecrire l’intitulé du métier du client, au singulier, tel qu’il doit apparaître dans le texte (sans majuscule) pour le désigner. Ex : maçon, esthéticienne, artisan…</p>
                         </div>
                         <div class="column">
                             <input class="field_input" id="metier_p" type="text" required placeholder="Métier (pluriel) *">
                             <label class="field_label" for="metier_p">Métier (pluriel) *</label>
+                            <p class="info">Ecrire l’intitulé du métier du client, au pluriel, tel qu’il doit apparaître dans le texte (sans majuscule) pour désigner son équipe. Ex : maçons, esthéticiennes, artisans…</p>
                         </div>
                     </div>
                     <div class="full group">
                         <input class="field_input" id="activite_1" type="text" required placeholder="Activité 1">
                         <label class="field_label" for="activite_1">Activité 1</label>
+                        <p class="info">Renseigner l’activité principale du client, en 1 ou plusieurs mots, telle qu’elle doit apparaître dans le texte (sans majuscule, avec article déterminant). Ex : la livraison de béton, la pose d’ongles et cils, la rénovation…</p>
                     </div>
                     <div class="full group">
-                        <input class="field_input" id="activite_2" type="text" required placeholder="Activité 1">
-                        <label class="field_label" for="activite_2">Activité 1</label>
+                        <input class="field_input" id="activite_2" type="text" required placeholder="Activité 2">
+                        <label class="field_label" for="activite_2">Activité 2</label>
+                        <p class="info">Renseigner une activité complémentaire du client, en 1 ou plusieurs mots, telle qu’elle doit apparaître dans le texte (sans majuscule, avec article déterminant). Ex : la livraison de béton, la pose d’ongles et cils, la rénovation…</p>
                     </div>
                     <div class="full group">
-                        <input class="field_input" id="activite_3" type="text" required placeholder="Activité 1">
-                        <label class="field_label" for="activite_3">Activité 1</label>
+                        <input class="field_input" id="activite_3" type="text" required placeholder="Activité 3">
+                        <label class="field_label" for="activite_3">Activité 3</label>
+                        <p class="info">Renseigner une activité complémentaire du client, en 1 ou plusieurs mots, telle qu’elle doit apparaître dans le texte (sans majuscule, avec article déterminant). Ex : la livraison de béton, la pose d’ongles et cils, la rénovation…</p>
                     </div>
                 </div>
             </div>
@@ -246,7 +388,7 @@
             <div class="card">
                 <div class="brief-selectpage">
                     <div class="title-minisection">
-                        <h4>Page 1 <i class="material-icons">info</i></h4>
+                        <h4>Page 1</h4>
                         <div class="buttons">
                             <a href=""><i class="material-icons">keyboard_arrow_down</i></a>
                             <a href=""><i class="material-icons">keyboard_arrow_up</i></a>
@@ -258,15 +400,25 @@
                         <div class="column">
                             <input class="field_input" id="name_page_1" type="text" required placeholder="Nom de la page">
                             <label class="field_label" for="name_page_1">Nom de la page</label>
+                            <p class="info">Nommer la page telle qu’elle apparaîtra dans la navigation sur le site du client. Ex : Accueil, Rénovation, Cours collectifs, Galerie, Tarifs…</p>
                         </div>
                         <div class="column">
-                            <input class="field_input" id="modele_page_1" type="text" required placeholder="Sélection du modèle de page">
-                            <label class="field_label" for="modele_page_1">Sélection du modèle de page</label>
+                            <div class="dropdown-simple">
+                                <input class="dropdown-toggle" type="text">
+                                <div class="dropdown-text">Sélection du modèle de page</div>
+                                <i class="material-icons">arrow_drop_down</i>
+                                <ul class="dropdown-content">
+                                    <li><a href="">Modèle 1</a></li>
+                                    <li><a href="">Modèle 2</a></li>
+                                    <li><a href="">Modèle 3</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="full group">
                         <input class="field_input" id="info_page_1" type="text" required placeholder="Détails et infos client">
                         <label class="field_label" for="info_page_1">Détails et infos client</label>
+                        <p class="info">Renseigner le brief lié à chaque page : les informations clients à placer dans les paragraphes et permettant de sélectionner la structure de page appropriée</p>
                     </div>
                 </div>
                 <div class="add-page">

@@ -72,10 +72,13 @@ $('.mutliSelect input[type="checkbox"]').on('click', function() {
         var html = '<span title="' + title + '">' + title + '</span>';
         $('.multiSel').append(html);
         $(".hida").hide();
+        $('dt .field_label').css('visibility','visible');
     } else {
         $('span[title="' + title + '"]').remove();
+        $(".hida").show();
         var ret = $(".hida");
-        $('.dropdown dt a').append(ret);
-
+        //$('.dropdown dt a').append(ret);
+        $(".hida").css('display','block');
+        $('dt .field_label').css('visibility','hidden');
     }
 });
