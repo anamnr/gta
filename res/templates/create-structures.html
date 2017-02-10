@@ -1,0 +1,27 @@
+{% extends "includes/base.html" %}
+{% block title %}Geolid | GTA - Creation{% endblock %}
+{% block description %}void{% endblock %}
+{% set sectionHeader = {navCreate:'active', size:'big', Ariane1:'enable', Chevron1:'enable', Ariane2:'active', Chevron2:'disable', Ariane3:'disable', Chevron3:'disable', Ariane4:'disable', Chevron4:'disable', Ariane5:'disable'} %}
+
+
+{% block body %}
+<div class="body nosearch">
+    {% include "includes/header.html" %}
+    <div class="content marginbig structures">
+        {% include "includes/infos-left.html" %}
+        <div class="container noflex">
+            <div class="title-page">
+                <h1>Page : Terrasse</h1>
+            </div>
+            <div class="title-card">
+                <h2>Choix de structure</h2>
+            </div>
+            <div class="card">
+                <div class="full group">
+                </div>
+            </div>
+        </div>
+        {% include "includes/tools-right.html" %}
+    </div>
+</div>
+{% endblock %}

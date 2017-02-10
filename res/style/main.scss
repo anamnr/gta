@@ -125,8 +125,17 @@ header .container{
   }
 }
 
+h1{
+  color: $color-text;
+  text-transform: uppercase;
+}
+
 .brief{
   .card{
     padding:2em!important;
   }
+}
+
+.structures{
+  .container{max-width: 852px}
 }

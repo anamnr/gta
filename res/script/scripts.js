@@ -82,3 +82,18 @@ $('.mutliSelect input[type="checkbox"]').on('click', function() {
         $('dt .field_label').css('visibility','hidden');
     }
 });
+
+$(document).ready(function() {
+    // Hides all paragraphs
+    $(".brief-content").hide();
+    // Optional for showing the first paragraph. For animation use .slideDown(200) instead of .show()
+    $(".brief-content").first().show();
+
+    $(".brief-title").click(function()
+    {
+        // Toggles the paragraph under the header that is clicked. .slideToggle(200) can be changed to .slideDown(200) to make sure one paragraph is shown at all times.
+        $(this).next(".brief-content").slideToggle(200);
+        // Makes other pararaphes that is not under the current clicked heading dissapear
+        $(this).siblings().next(".brief-content").slideUp(200);
+    });
+});

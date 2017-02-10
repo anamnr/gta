@@ -1,0 +1,66 @@
+.list-pages{
+  position: fixed;
+  width: 300px;
+  padding: 20px;
+  ul{
+    padding:0;
+    margin: 0;
+  }
+  li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &:hover a, &.active a{
+      background-color: $color-hoverlight;
+      border-radius: 3px;
+    }
+    a{
+      @include flexbox;
+      @include flex-direction(row);
+      @include align-items(center);
+      @include justify-content(space-between);
+      padding: 5px 15px;
+      margin: 5px 0;
+      p.page{
+        color: $color-text;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      p.etat{
+        font-weight: 400;
+        color: $color-warning;
+        &.ok{
+          color: $color-good;
+        }
+        &.empty{
+          color: $color-bad;
+        }
+      }
+    }
+  }
+}
+
+.cards-infos{
+  position: fixed;
+  width: 300px;
+  padding: 20px;
+  bottom: 0;
+  .card.brief{
+    padding: 0;
+    .brief-title{
+      padding: 5px 15px;
+      background-color: $color-text;
+      border-radius: 3px 3px 0 0;
+      color: $color-white;
+      @include flexbox;
+      @include flex-direction(row);
+      @include align-items(center);
+      @include justify-content(space-between);
+    }
+    .brief-content{
+      padding: 15px;
+      max-height: 400px;
+      overflow: auto;
+    }
+  }
+}
